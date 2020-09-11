@@ -16,4 +16,14 @@ public class SpaceShipServiceTest {
         Assertions.assertEquals("Mike", mike.getCaptain());
         Assertions.assertEquals(25.0, mike.getFuel());
     }
+
+    @Test
+    public void nextSpaceShipToRefuel() {
+        SpaceShip spaceShip = new SpaceShipService().nextSpaceShipToRefuel();
+        Assertions.assertNotNull(spaceShip);
+        System.out.println("SpaceShip returned " + spaceShip);
+//        Assertions.assertEquals("Round", spaceShip.getModel());
+//        Assertions.assertEquals("Mike",spaceShip.getCaptain());
+//        Assertions.assertEquals(25.0, spaceShip.getFuel());
+    }
 }
